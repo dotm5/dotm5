@@ -1,0 +1,45 @@
+<svg width="1100" height="84" viewBox="0 0 1100 84" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">technology widgets</title>
+  <desc id="desc">Colorful local badge widgets for graphics, HDR, numerics, and desktop tools.</desc>
+  <style>
+    .label { font: 700 15px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #F0F6FC; }
+    .value { font: 700 15px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #FFFFFF; }
+  </style>
+  <defs>
+    <filter id="soft" x="-8%" y="-18%" width="116%" height="136%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#010409" flood-opacity=".25"/>
+    </filter>
+  </defs>
+
+  <rect width="1100" height="84" rx="18" fill="#0D1117"/>
+  <g filter="url(#soft)">
+    <g transform="translate(99 22)">
+      <rect width="188" height="40" rx="8" fill="#30363D"/>
+      <rect x="82" width="106" height="40" rx="8" fill="#2F81F7"/>
+      <path d="M82 0H91V40H82Z" fill="#2F81F7"/>
+      <text class="label" x="16" y="26">Graphics</text>
+      <text class="value" x="98" y="26">Blender Tools</text>
+    </g>
+    <g transform="translate(304 22)">
+      <rect width="184" height="40" rx="8" fill="#30363D"/>
+      <rect x="52" width="132" height="40" rx="8" fill="#A371F7"/>
+      <path d="M52 0H61V40H52Z" fill="#A371F7"/>
+      <text class="label" x="16" y="26">HDR</text>
+      <text class="value" x="69" y="26">Gain Map HEIC</text>
+    </g>
+    <g transform="translate(505 22)">
+      <rect width="207" height="40" rx="8" fill="#30363D"/>
+      <rect x="86" width="121" height="40" rx="8" fill="#238636"/>
+      <path d="M86 0H95V40H86Z" fill="#238636"/>
+      <text class="label" x="16" y="26">Numerics</text>
+      <text class="value" x="104" y="26">WENO + KAN</text>
+    </g>
+    <g transform="translate(729 22)">
+      <rect width="177" height="40" rx="8" fill="#30363D"/>
+      <rect x="78" width="99" height="40" rx="8" fill="#D29922"/>
+      <path d="M78 0H87V40H78Z" fill="#D29922"/>
+      <text class="label" x="16" y="26">Desktop</text>
+      <text class="value" x="94" y="26">WinUI / Qt</text>
+    </g>
+  </g>
+</svg>

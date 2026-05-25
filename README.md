@@ -1,14 +1,8 @@
 <h1 align="center">dotm5</h1>
 
-<p align="center">
-  Computational graphics, HDR images, numerical methods, and small local-first tools.
-</p>
+<p align="center"><img src="./assets/profile-banner.svg" alt="Computational graphics, HDR imaging, numerical experiments, and local-first tools"></p>
 
----
-
-<h3 align="center">Blender Add-ons | Image Pipelines | Numerical Experiments</h3>
-
-<p align="center"><kbd>Blender</kbd> <kbd>Unreal assets</kbd> <kbd>HDR</kbd> <kbd>Gain maps</kbd> <kbd>WENO</kbd> <kbd>KAN</kbd> <kbd>WinUI</kbd> <kbd>Qt</kbd></p>
+<p align="center"><img src="./assets/tech-widgets.svg" alt="Blender tools, gain-map HEIC, WENO plus KAN, WinUI and Qt"></p>
 
 ---
 

@@ -1,0 +1,73 @@
+<svg width="1100" height="300" viewBox="0 0 1100 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">dotm5 profile banner</title>
+  <desc id="desc">A colorful local SVG banner for computational graphics, HDR imaging, numerical experiments, and local-first tools.</desc>
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .pulse { animation: pulse 3.6s ease-in-out infinite; }
+    .scan { animation: scan 6s linear infinite; }
+    .line-a { animation: cycleA 9s ease-in-out infinite; }
+    .line-b { animation: cycleB 9s ease-in-out infinite; }
+    .line-c { animation: cycleC 9s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
+    @keyframes scan { from { transform: translateX(-240px); } to { transform: translateX(1120px); } }
+    @keyframes cycleA { 0%,28% { opacity: 1; } 33%,100% { opacity: 0; } }
+    @keyframes cycleB { 0%,30% { opacity: 0; } 36%,62% { opacity: 1; } 68%,100% { opacity: 0; } }
+    @keyframes cycleC { 0%,65% { opacity: 0; } 72%,94% { opacity: 1; } 100% { opacity: 0; } }
+  </style>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1100" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1117"/>
+      <stop offset=".45" stop-color="#151B2B"/>
+      <stop offset="1" stop-color="#101820"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="90" y1="35" x2="1010" y2="265" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2F81F7"/>
+      <stop offset=".32" stop-color="#39D0FF"/>
+      <stop offset=".63" stop-color="#A371F7"/>
+      <stop offset="1" stop-color="#3FB950"/>
+    </linearGradient>
+    <linearGradient id="scanGrad" x1="0" y1="0" x2="220" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#39D0FF" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#39D0FF" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#A371F7" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.22 0 0 0 0 0.75 0 0 0 0 1 0 0 0 .65 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="12" y="12" width="1076" height="276" rx="24" fill="url(#panel)" stroke="#30363D" stroke-width="2"/>
+  <path d="M78 74H1022" stroke="#30363D" stroke-width="2"/>
+  <path d="M78 232H1022" stroke="url(#accent)" stroke-width="4" opacity=".75"/>
+  <rect class="scan" x="0" y="230" width="230" height="5" fill="url(#scanGrad)" opacity=".9"/>
+
+  <g filter="url(#glow)" opacity=".85">
+    <circle class="pulse" cx="155" cy="148" r="44" fill="#2F81F7" opacity=".18"/>
+    <circle class="pulse" cx="941" cy="112" r="54" fill="#A371F7" opacity=".16"/>
+    <circle class="pulse" cx="870" cy="205" r="38" fill="#3FB950" opacity=".14"/>
+  </g>
+
+  <text x="550" y="118" text-anchor="middle" class="sans" font-size="56" font-weight="800" fill="#F0F6FC">dotm5</text>
+  <text x="550" y="158" text-anchor="middle" class="mono" font-size="24" fill="#39D0FF">Blender Add-ons | Numerical Solvers | Image Pipelines</text>
+
+  <g class="mono" font-size="17" text-anchor="middle">
+    <text class="line-a" x="550" y="194" fill="#C9D1D9">building local-first tools for technical workflows</text>
+    <text class="line-b" x="550" y="194" fill="#C9D1D9">recovering maps, validating images, testing numerical ideas</text>
+    <text class="line-c" x="550" y="194" fill="#C9D1D9">small utilities, practical experiments, readable pipelines</text>
+  </g>
+
+  <g opacity=".85">
+    <path d="M196 145C260 96 321 100 382 139" stroke="#39D0FF" stroke-width="2" stroke-dasharray="6 8"/>
+    <path d="M718 162C782 212 845 210 910 162" stroke="#A371F7" stroke-width="2" stroke-dasharray="6 8"/>
+    <circle cx="196" cy="145" r="5" fill="#39D0FF"/>
+    <circle cx="382" cy="139" r="5" fill="#39D0FF"/>
+    <circle cx="718" cy="162" r="5" fill="#A371F7"/>
+    <circle cx="910" cy="162" r="5" fill="#A371F7"/>
+  </g>
+</svg>
