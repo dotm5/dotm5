@@ -2,8 +2,7 @@
   <title id="title">technology widgets</title>
   <desc id="desc">Compact colorful local badge widgets for graphics, HDR, numerics, and desktop tools.</desc>
   <style>
-    .label { font: 700 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #F0F6FC; }
-    .value { font: 700 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #FFFFFF; }
+    .text { font: 700 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #F0F6FC; dominant-baseline: middle; text-anchor: middle; }
   </style>
   <defs>
     <filter id="soft" x="-5%" y="-14%" width="110%" height="128%">
@@ -13,34 +12,37 @@
 
   <rect x="1" y="1" width="898" height="54" rx="14" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
 
-  <g filter="url(#soft)" transform="translate(61 12)">
+  <g filter="url(#soft)" transform="translate(49 12)">
     <g>
+      <rect width="180" height="32" rx="7" fill="#30363D"/>
+      <path d="M82 0H173C176.866 0 180 3.13401 180 7V25C180 28.866 176.866 32 173 32H82V0Z" fill="#2F81F7"/>
+      <path d="M82 0H90V32H82Z" fill="#2F81F7"/>
+      <text class="text" x="41" y="16">Graphics</text>
+      <text class="text" x="131" y="16">Blender Tools</text>
+    </g>
+
+    <g transform="translate(201 0)">
       <rect width="176" height="32" rx="7" fill="#30363D"/>
-      <rect x="76" width="100" height="32" rx="7" fill="#2F81F7"/>
-      <path d="M76 0H84V32H76Z" fill="#2F81F7"/>
-      <text class="label" x="14" y="21">Graphics</text>
-      <text class="value" x="91" y="21">Blender Tools</text>
+      <path d="M56 0H169C172.866 0 176 3.13401 176 7V25C176 28.866 172.866 32 169 32H56V0Z" fill="#A371F7"/>
+      <path d="M56 0H64V32H56Z" fill="#A371F7"/>
+      <text class="text" x="28" y="16">HDR</text>
+      <text class="text" x="116" y="16">Gain Map HEIC</text>
     </g>
-    <g transform="translate(198 0)">
-      <rect width="172" height="32" rx="7" fill="#30363D"/>
-      <rect x="48" width="124" height="32" rx="7" fill="#A371F7"/>
-      <path d="M48 0H56V32H48Z" fill="#A371F7"/>
-      <text class="label" x="14" y="21">HDR</text>
-      <text class="value" x="64" y="21">Gain Map HEIC</text>
+
+    <g transform="translate(398 0)">
+      <rect width="196" height="32" rx="7" fill="#30363D"/>
+      <path d="M88 0H189C192.866 0 196 3.13401 196 7V25C196 28.866 192.866 32 189 32H88V0Z" fill="#238636"/>
+      <path d="M88 0H96V32H88Z" fill="#238636"/>
+      <text class="text" x="44" y="16">Numerics</text>
+      <text class="text" x="142" y="16">WENO + KAN</text>
     </g>
-    <g transform="translate(392 0)">
-      <rect width="190" height="32" rx="7" fill="#30363D"/>
-      <rect x="80" width="110" height="32" rx="7" fill="#238636"/>
-      <path d="M80 0H88V32H80Z" fill="#238636"/>
-      <text class="label" x="14" y="21">Numerics</text>
-      <text class="value" x="98" y="21">WENO + KAN</text>
-    </g>
-    <g transform="translate(604 0)">
-      <rect width="174" height="32" rx="7" fill="#30363D"/>
-      <rect x="76" width="98" height="32" rx="7" fill="#D29922"/>
-      <path d="M76 0H84V32H76Z" fill="#D29922"/>
-      <text class="label" x="14" y="21">Desktop</text>
-      <text class="value" x="92" y="21">WinUI / Qt</text>
+
+    <g transform="translate(615 0)">
+      <rect width="188" height="32" rx="7" fill="#30363D"/>
+      <path d="M82 0H181C184.866 0 188 3.13401 188 7V25C188 28.866 184.866 32 181 32H82V0Z" fill="#D29922"/>
+      <path d="M82 0H90V32H82Z" fill="#D29922"/>
+      <text class="text" x="41" y="16">Desktop</text>
+      <text class="text" x="135" y="16">WinUI / Qt</text>
     </g>
   </g>
 </svg>
